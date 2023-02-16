@@ -5,9 +5,11 @@ import {range} from '../../utils';
 function Guess({guess}) {
   return (
     <p className="guess">
-      {range(5).map((i) => (
-        <span className="cell">{guess[i]}</span>
-      ))}
+      {guess
+        ? guess.map((guess, i) => (
+            <span key={i} className={'cell ' + guess.status}>{guess.letter}</span>
+          ))
+        : range(5).map((i) => <span key={i} className="cell"></span>)}
     </p>
   );
 }
