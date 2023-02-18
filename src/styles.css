@@ -156,6 +156,13 @@ h1 {
   padding: 8px;
 }
 
+.restart-button {
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px;
+}
+
 .guess-input-wrapper {
   display: flex;
   flex-direction: column;

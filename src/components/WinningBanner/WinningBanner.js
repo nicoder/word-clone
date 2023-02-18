@@ -1,6 +1,7 @@
 import React from 'react';
+import RestartButton from '../RestartButton';
 
-function WinningBanner({nbGuesses}) {
+function WinningBanner({nbGuesses, restartGame}) {
   return (
     <div className="happy banner">
       <p>
@@ -11,6 +12,7 @@ function WinningBanner({nbGuesses}) {
         </strong>
         .
       </p>
+      <RestartButton restartGame={restartGame}/>
     </div>
   );
 }
