@@ -124,20 +124,36 @@ h1 {
   --radius: 0px 0px 0px 4px;
 }
 
-.cell.correct {
+.cell.correct,
+.letter.correct {
   background: var(--color-success);
   border-color: var(--color-success);
   color: white;
 }
-.cell.incorrect {
+.cell.incorrect,
+.letter.incorrect {
   background: var(--color-gray-300);
   border-color: var(--color-gray-300);
   color: white;
 }
-.cell.misplaced {
+.cell.misplaced,
+.letter.misplaced {
   background: var(--color-warning);
   border-color: var(--color-warning);
   color: white;
+}
+
+.letter-row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 4px;
+}
+
+.letter {
+  font-weight: bold;
+  background-color: lightgrey;
+  padding: 8px;
 }
 
 .guess-input-wrapper {
